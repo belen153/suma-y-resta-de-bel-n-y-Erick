@@ -15,3 +15,22 @@ def main():
 
 if __name__ == "__main__":
     main()
+    def multiplicar(a, b):
+    return a * b
+
+def dividir(a, b):
+    if b == 0:
+        return "No se puede dividir entre cero"
+    return a / b
+
+print("Operaciones de multiplicación y división")
+num1 = float(input("Ingresa el primer número: "))
+num2 = float(input("Ingresa el segundo número: "))
+
+# Multiplicación
+resultado_mult = multiplicar(num1, num2)
+print(f"{num1} x {num2} = {resultado_mult}")
+
+# División
+resultado_div = dividir(num1, num2)
+print(f"{num1} ÷ {num2} = {resultado_div}")
